@@ -26,6 +26,10 @@ void c03e02()
         float y = C2F(temp);
         cout << "in fahrenheit that's: " << y << endl;
     }
+    else
+    {
+        cout << "you too dumb to enter 1 or 2 or what ";
+    }
 }
 
 float F2C(float x)
