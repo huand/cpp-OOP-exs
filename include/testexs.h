@@ -19,3 +19,5 @@ void c03e06();
 void c03e07();
 void c03e08();
 void c03e09();
+void c03e10();
+void c03e11();
