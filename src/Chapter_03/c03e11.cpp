@@ -51,19 +51,22 @@ void c03e11()
     else if (op == '*')
     {
         C = c1 * p2;
-        if (C > 19)
+        int r=0;
+        while (C > 19)
         {
             C -= 20;
+            r++;
         }
         S = s1 * p2;
-        S--;
-        if (S > 11)
+        S+=r;
+        r=0;
+        while (S > 11)
         {
             S -= 12;
+            r++;
         }
         P = p1 * p2;
-        P++;
+        P+=r;
     }
     cout << "result: " << P << '.' << S << '.' << C << endl;
-    cout << p1 << '.' << s1 << '.' << c1 << '.' << p2 << '.' << s2 << '.' << c2 << '.' << endl;
 }
