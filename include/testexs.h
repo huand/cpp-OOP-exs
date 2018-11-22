@@ -24,3 +24,6 @@ void c03e11();
 void c03e12();
 void c04e01();
 void c04e02();
+void c04e03();
+void c04e04();
+void c04e05();
