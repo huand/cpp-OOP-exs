@@ -7,23 +7,23 @@ void c03e12()
     do
     {
         cout << "please type in an operation on fraction (ex 4/2+5/6):\n";
-        int n1, d1, n2, d2;
+        int n1, d1, f2.n, d2;
         char op, f;
-        cin >> n1 >> f >> d1 >> op >> n2 >> f >> d2;
+        cin >> n1 >> f >> d1 >> op >> f2.n >> f >> d2;
         float res;
         switch (op)
         {
         case '+':
-            res = (n1 * d2 + n2 * d1) / d2 / d1;
+            res = (n1 * d2 + f2.n * d1) / d2 / d1;
             break;
         case '-':
-            res = (n1 * d2 - n2 * d1) / d2 / d1;
+            res = (n1 * d2 - f2.n * d1) / d2 / d1;
             break;
         case '*':
-            res = n1 * n2 / d2 / d1;
+            res = n1 * f2.n / d2 / d1;
             break;
         case '/':
-            res = res = n1 / n2 * d2 / d1;
+            res = n1 / f2.n * d2 / d1;
             break;
         default:
             break;
