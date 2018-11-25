@@ -5,3 +5,5 @@ void c05e04();
 void c05e05();
 void c05e06();
 void c05e07();
+void c05e08();
+void c05e09();
