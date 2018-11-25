@@ -1,6 +1,9 @@
 cmake_minimum_required (VERSION 3.0)
 project (oopcppexs)
-include_directories ("${PROJECT_SOURCE_DIR}/include")
+include_directories (
+    "${PROJECT_SOURCE_DIR}/include"
+    "${PROJECT_SOURCE_DIR}/include/Chapt_headers"
+    )
 add_subdirectory (src) 
  
 # add the executable
