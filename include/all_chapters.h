@@ -2,3 +2,4 @@
 #include"Chapt03.h"
 #include"Chapt04.h"
 #include"Chapt05.h"
+#include"Chapt06.h"
