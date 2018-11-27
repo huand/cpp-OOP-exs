@@ -4,6 +4,6 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-  c06e02();
+  c06e04();
   return 0;
 }
