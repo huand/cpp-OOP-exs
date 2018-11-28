@@ -35,6 +35,7 @@ void c06e07()
     while (yn == 'y')
     {
         angle a;
+        a.getAngle();
         a.display();
         cout << "Do you want to Enter a new angle? (y/n): ";
         cin >> yn;
@@ -112,7 +113,6 @@ void angle::display() const
 }
 angle::angle()
 {
-    this->getAngle();
 }
 
 angle::~angle()
