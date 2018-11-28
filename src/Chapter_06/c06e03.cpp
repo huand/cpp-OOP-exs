@@ -11,7 +11,7 @@ class Time
     Time(int, int, int);
     ~Time();
     void display() const;
-    Time add(Time, Time);
+    void add(Time, Time);
 };
 
 void c06e03()
@@ -38,7 +38,7 @@ Time::~Time()
 {
 }
 
-Time Time::add(Time t1, Time t2)
+void Time::add(Time t1, Time t2)
 {
     long secs = (t1.hours + t2.hours) * 3600 + (t1.minutes + t2.minutes) * 60 + t1.secondes + t2.secondes;
     secondes = secs % 60;
