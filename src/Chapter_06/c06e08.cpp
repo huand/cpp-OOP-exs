@@ -9,18 +9,20 @@ class part
 
   public:
     part();
-    void display()const;
+    void display() const;
     ~part();
 };
 
-void c06e08(){
+void c06e08()
+{
     part p1;
-    part p2,p3,p4,p5;
+    part p2, p3, p4, p5;
 }
 
 int part::count = 0;
-void part::display()const{
-    cout<<"I am object number "<<serial<<endl;
+void part::display() const
+{
+    cout << "I am object number " << serial << endl;
 }
 part::part()
 {
