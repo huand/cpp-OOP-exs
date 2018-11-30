@@ -24,7 +24,7 @@ void c06e12()
 {
     int n = 6;
     fraction fy;
-    cout<<'\t';
+    cout << '\t';
     for (int j = 1; j < n; j++)
     {
         fraction fj(j, n);
