@@ -3,5 +3,6 @@
         "iomanip": "cpp",
         "ostream": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }

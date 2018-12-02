@@ -26,8 +26,6 @@ void c07e01()
     cout<<"Enter a phrase to reverse: ";
     char c[MAX];
     cin.get(c,MAX);
-    cout<<"stringLength= "<<strlen(c)<<endl;
-    cout<<"stringLength= "<<lengthofstr(c)<<endl;
     reverseit(c);
     cout<<"                        -> ";
     cout<<c<<endl;
