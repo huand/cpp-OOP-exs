@@ -41,11 +41,32 @@ void Distance::get()
 Distance::Distance(/* args */)
 {
 }
-Distance::Distance(int i, float f){
-    feet=i;
-    inches=f;
+Distance::Distance(int Feet, float Inches){
+    feet=Feet;
+    inches=Inches;
 }
 
 Distance::~Distance()
 {
+}
+
+Distance Distance::operator+(Distance d)const{
+    
+    float i=inches+ d.inches;
+    int f=feet+ d.feet;
+    int r = i / 12;
+    f += r;
+    i -= r * 12;
+    return Distance(f,i);
+}
+
+Distance Distance::operator-(Distance d)const{
+    
+    float i =inches- d.inches;
+    int f= feet-d.feet;
+    int r = i / 12;
+    r+=i<0?-1:0;
+    f += r;
+    i -= r * 12;
+    return Distance(f,i);
 }

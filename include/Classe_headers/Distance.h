@@ -12,5 +12,7 @@ class Distance
     void add(Distance);
     void div(float);
     void mul(float);
+    Distance operator + (Distance) const;
+    Distance operator - (Distance) const;
     ~Distance();
 };
