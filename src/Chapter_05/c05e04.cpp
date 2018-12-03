@@ -24,5 +24,5 @@ void c05e04()
     cout << "enter distance2 feet and inches (ex: 12 8): ";
     cin >> d2.feet >> d2.inches;
     d3 = largestDistance(d1, d2);
-    cout << "largest distance: " << d3.feet << " " << d3.inches << endl;
+    cout << "largest Distance: " << d3.feet << " " << d3.inches << endl;
 }

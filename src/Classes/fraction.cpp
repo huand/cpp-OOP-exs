@@ -21,18 +21,18 @@ void fraction::show()
 }
 void fraction::reduc()
 {
-    int x = 2;
-    while (x <= d && x <= n)
+    int x = n>d?d:n;
+    while (x > 1)
     {
         if (d % x == 0 && n % x == 0)
         {
             d /= x;
             n /= x;
-            x = 2;
+            break;
         }
         else
         {
-            x++;
+            x--;
         }
     }
 }
@@ -47,8 +47,8 @@ fraction::~fraction()
 
 void fraction::fadd(fraction f1, fraction f2)
 {
-    n = (f1.n * f2.d + f2.n * f1.d);
     d = f2.d * f1.d;
+    n = (f1.n * f2.d + f2.n * f1.d);
 }
 void fraction::fsub(fraction f1, fraction f2)
 {
@@ -64,6 +64,6 @@ void fraction::fmul(fraction f1, fraction f2)
 void fraction::fdiv(fraction f1, fraction f2)
 {
     fraction res;
-    n = f1.n / f2.n;
-    d = f1.d / f2.d;
+    n = f1.n * f2.d;
+    d = f1.d * f2.n;
 }
