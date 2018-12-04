@@ -35,6 +35,7 @@ int queue::get()
     else
     {
         cout << "Queue is empty!\n";
+        exit(-1);
     }
 }
 int queue::inqueue()

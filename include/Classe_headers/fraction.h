@@ -13,6 +13,12 @@ public:
   void fsub(fraction f1, fraction f2);
   void fmul(fraction f1, fraction f2);
   void fdiv(fraction f1, fraction f2);
+  fraction operator+(fraction);
+  fraction operator-(fraction);
+  fraction operator*(fraction);
+  fraction operator/(fraction);
+  bool operator==(fraction);
+  bool operator!=(fraction);
   void reduc();
   void show();
 };

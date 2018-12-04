@@ -32,7 +32,8 @@ int safearray::getel(int index)
     
     else
     {
-        cout<<"Out of bounds lol!\n";;
+        cout<<"Out of bounds lol!\n";
+        exit(-1);
         /* code */
     }
     
