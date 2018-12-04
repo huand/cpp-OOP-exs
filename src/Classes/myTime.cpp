@@ -13,6 +13,17 @@ myTime::myTime(int hr, int mn, int sc)
     secondes = sc;
 }
 
+myTime myTime::operator+(myTime t){
+    int s=secondes+t.secondes;
+    int m=minutes+t.minutes;
+    int h=hours+t.hours;
+    m+=s/60;
+    s=s%60;
+    h+=m/60;
+    m=m%60;
+    return myTime(h,m,s);
+}
+
 myTime::~myTime()
 {
 }
