@@ -2,12 +2,13 @@
 #include "bMoney.h"
 using namespace std;
 
-void bMoney::madd(bMoney m1, bMoney m2){
-    money=m1.money+m2.money;
+void bMoney::madd(bMoney m1, bMoney m2)
+{
+    money = m1.money + m2.money;
 }
 long double bMoney::string2ld(string input)
 {
-    string output = "";    
+    string output = "";
     int strl = input.length();
     for (int i = 0; i < strl; i++)
     {
@@ -58,4 +59,29 @@ bMoney::bMoney(char c[])
 {
     string input(c);
     money = string2ld(input);
+}
+bMoney::bMoney(long double ld)
+{
+    money = ld;
+}
+
+bMoney bMoney::operator+(bMoney y)
+{
+    return bMoney(money+y.money);
+}
+bMoney bMoney::operator-(bMoney y)
+{
+    return bMoney(money-y.money);
+}
+bMoney bMoney::operator*(long double ld)
+{
+    return bMoney(money*ld);
+}
+bMoney bMoney::operator/(long double ld)
+{
+    return bMoney(money/ld);
+}
+long double bMoney::operator/(bMoney bm)
+{
+    return money/bm.money;
 }
