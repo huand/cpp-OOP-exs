@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include",
                 "${workspaceFolder}/include/Chapt_headers",
-                "${workspaceFolder}/include/Classe_headers"
+                "${workspaceFolder}/include/Classe_headers",
+                "${workspaceFolder}/src/Chapters/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

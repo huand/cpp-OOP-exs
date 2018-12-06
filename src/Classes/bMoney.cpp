@@ -67,21 +67,26 @@ bMoney::bMoney(long double ld)
 
 bMoney bMoney::operator+(bMoney y)
 {
-    return bMoney(money+y.money);
+    return bMoney(money + y.money);
 }
 bMoney bMoney::operator-(bMoney y)
 {
-    return bMoney(money-y.money);
+    return bMoney(money - y.money);
 }
 bMoney bMoney::operator*(long double ld)
 {
-    return bMoney(money*ld);
+    return bMoney(money * ld);
 }
 bMoney bMoney::operator/(long double ld)
 {
-    return bMoney(money/ld);
+    return bMoney(money / ld);
 }
 long double bMoney::operator/(bMoney bm)
 {
-    return money/bm.money;
+    return money / bm.money;
+}
+
+bMoney::operator sterling()
+{
+    return sterling(static_cast<double>(money / 50));
 }

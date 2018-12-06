@@ -46,7 +46,7 @@ sterling sterling::operator-(sterling s)
 }
 long sterling::sterling2pence()
 {
-    return pounds * po2sh*sh2pe + shillings * sh2pe + pence;
+    return pounds * po2sh * sh2pe + shillings * sh2pe + pence;
 }
 double sterling::operator/(sterling s)
 {
@@ -79,4 +79,14 @@ void sterling::simplify()
 }
 sterling::~sterling()
 {
+}
+
+sterling::operator double()
+{
+    return static_cast<double>(pounds) + static_cast<double>(shillings) / po2sh + static_cast<double>(pence) / sh2pe / po2sh;
+}
+
+sterling::operator bMoney(){
+    bMoney b(static_cast<long double>(50*double(*this)));
+    return b;
 }
