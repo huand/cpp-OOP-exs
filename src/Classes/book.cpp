@@ -10,7 +10,7 @@ book::book()
     pagecount = 0;
 }
 
-book::book(string s, float f, int i) : publication(s, f)
+book::book(string s, float f, int i):publication(s, f)
 {
     pagecount = i;
 }
