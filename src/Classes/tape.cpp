@@ -8,6 +8,7 @@ tape::tape(string str, float f1, float f2) : publication(str, f2), length(f2) {}
 void tape::getdata()
 {
     publication::getdata();
+    sales::getdata();
     cout << "enter length: ";
     cin >> length;
     cin.ignore();
@@ -15,6 +16,7 @@ void tape::getdata()
 void tape::putdata()
 {
     publication::putdata();
+    sales::putdata();
     cout << ", length: " << length << " [min]" << endl;
     ;
 }

@@ -1,8 +1,9 @@
 #include "publication.h"
+#include "sales.h"
 #include<iostream>
 using namespace std;
 
-class tape : public publication
+class tape : public publication, public sales
 {
   private:
     float length;

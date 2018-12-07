@@ -1,6 +1,7 @@
 #include "publication.h"
+#include "sales.h"
 
-class book : public publication
+class book : public publication, public sales
 {
   private:
     int pagecount;

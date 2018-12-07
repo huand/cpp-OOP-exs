@@ -16,6 +16,7 @@ book::book(string s, float f, int i):publication(s, f)
 }
 void book::getdata(){
     publication::getdata();
+    sales::getdata();
     cout<<"Enter page count: ";
     cin>>pagecount;
     cin.ignore();
@@ -23,7 +24,8 @@ void book::getdata(){
 void book::putdata()
 {
     publication::putdata();
-     cout<<", page count: " << pagecount<<endl;
+     cout<<", page count: " << pagecount;
+     sales::putdata();
 }
 
 book::~book() {}
