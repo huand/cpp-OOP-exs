@@ -15,7 +15,7 @@ myString::myString(char s[])
 }
 void myString::display() const
 {
-    cout << str;
+    cout << str<<endl;
 }
 myString myString::operator+(myString ss) const
 {

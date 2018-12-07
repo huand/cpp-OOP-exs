@@ -1,6 +1,6 @@
 class myString
 {
-  private:
+  protected:
     enum
     {
         SZ = 80
