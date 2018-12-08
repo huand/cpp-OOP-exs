@@ -6,7 +6,7 @@ using namespace std;
 
 employee::employee()
 {
-    this->fGetData();
+    //this->fGetData();
 }
 void employee::fGetData()
 {

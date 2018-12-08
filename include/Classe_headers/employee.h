@@ -16,7 +16,7 @@ enum etype
 };
 class employee
 {
-  private:
+  protected:
     int mNumber;
     float mCompensation;
     etype mType;

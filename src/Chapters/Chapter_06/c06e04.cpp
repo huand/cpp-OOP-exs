@@ -23,7 +23,6 @@ void c06e04(){
 
 employee::employee()
 {
-    this->fGetData();
 }
 void employee::fGetData()
 {
