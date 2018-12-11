@@ -2,16 +2,19 @@
 #include <iostream>
 using namespace std;
 
-queue::queue(/* args */)
+template<class T>
+queue<T>::queue(/* args */)
 {
     n = 0;
 }
 
-queue::~queue()
+template<class T>
+queue<T>::~queue()
 {
 }
 
-void queue::put(int i)
+template<class T>
+void queue<T>::put(T i)
 {
 
     if (n < MAXSIZE)
@@ -20,11 +23,12 @@ void queue::put(int i)
     }
 }
 
-int queue::get()
+template<class T>
+T queue<T>::get()
 {
     if (n > 0)
     {
-        int temp = arr[0];
+        T temp = arr[0];
         for (int i = 1; i < n; i++)
         {
             arr[i - 1] = arr[i];
@@ -38,7 +42,8 @@ int queue::get()
         exit(-1);
     }
 }
-int queue::inqueue()
+template<class T>
+int queue<T>::inqueue()
 {
     return n;
 }

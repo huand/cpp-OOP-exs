@@ -1,3 +1,4 @@
+template<class T>
 class queue
 {
   private:
@@ -5,13 +6,13 @@ class queue
     {
         MAXSIZE = 100
     };
-    int arr[MAXSIZE];
+    T arr[MAXSIZE];
     int n;
 
   public:
     queue(/* args */);
     ~queue();
-    void put(int);
-    int get();
+    void put(T);
+    T get();
     int inqueue();
 };
