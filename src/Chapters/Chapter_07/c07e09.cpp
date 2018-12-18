@@ -4,7 +4,7 @@ using namespace std;
 
 void c07e09()
 {
-    queue q;
+    queue<int> q;
     q.put(1);
     cout<<q.inqueue()<< " elements in queue"<<endl;
     q.put(2);
